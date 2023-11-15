@@ -21,10 +21,14 @@ export const Empty = () => (
       </section>
     </section>
     <section className="flex flex-col md:flex-row items-center gap-4">
-      <button className="btn btn-outline">
+      <a
+        className="btn btn-outline"
+        href="https://github.com/killoblanco/tesseract-ocr"
+        target="_github"
+      >
         <IconBrandGithub className="w-6 h-6" />
         View on GitHub
-      </button>
+      </a>
       <a
         className="btn btn-outline"
         href="https://github.com/naptha/tesseract.js"
