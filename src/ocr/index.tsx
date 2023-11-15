@@ -1,4 +1,3 @@
-import { IconSparkles, IconCircleCheck } from '@tabler/icons-react'
 import { FC } from 'react'
 import { Empty } from './empty'
 import { Loading } from './loading'
