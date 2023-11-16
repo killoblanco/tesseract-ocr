@@ -1,4 +1,4 @@
-import { IconCircleCheck, IconClipboardCheck, IconCopy, IconRotate2 } from '@tabler/icons-react'
+import { Icon } from '@iconify/react'
 import { FC, useCallback, useEffect, useRef, useState } from 'react'
 
 interface Props {
@@ -30,7 +30,7 @@ export const Results: FC<Props> = ({ data, onReset }) => {
   return (
     <>
       <header className="inline-flex gap-4 card-title text-3xl">
-        <IconCircleCheck className="w-10 h-10 text-success" />
+        <Icon icon="tabler:circle-check" className="w-10 h-10 text-success" />
         <h2>Results:</h2>
       </header>
       <pre className="bg-base-100 w-full p-4 whitespace-pre-line h-96 overflow-hidden overflow-y-auto rounded-xl">
@@ -39,18 +39,18 @@ export const Results: FC<Props> = ({ data, onReset }) => {
       <textarea ref={inputRef} className="hidden">{result}</textarea>
       <section className="flex flex-row flex-wrap gap-4">
         <button className="btn btn-primary" onClick={handleCopyToClipboard}>
-          <IconCopy />
+          <Icon icon="tabler:copy" />
           Copy Results
         </button>
         <button className="btn btn-secondary" onClick={onReset}>
-          <IconRotate2 />
+          <Icon icon="tabler:rotate-2" />
           Reset
         </button>
       </section>
       {showToast && (
         <div className="toast toast-center">
           <div className="alert bg-secondary text-secondary-content w-fit inline-flex p-3">
-            <IconClipboardCheck className="w-6 h-6" />
+            <Icon icon="tabler:clipboard-check" className="w-6 h-6" />
             <span>Copied to clipboard</span>
           </div>
         </div>

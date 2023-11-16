@@ -1,9 +1,9 @@
-import { IconBrandNetbeans, IconBrandGithub } from '@tabler/icons-react'
+import { Icon } from '@iconify/react'
 
 export const Empty = () => (
   <>
     <h1 className="inline-flex items-center gap-4 text-3xl font-bold">
-      <IconBrandNetbeans className="w-10 h-10" />
+      <Icon icon="tabler:brand-netbeans" className="w-10 h-10" />
       Tesseract.js Demo
     </h1>
     <section className="typo typo-slate dark:typo-invert">
@@ -13,7 +13,7 @@ export const Empty = () => (
         will recognize the text in the image and return the result.
       </p>
       <section className="alert  bg-accent text-accent-content w-fit">
-        <IconBrandNetbeans className="w-8 h-8 md:w-10 md:h-10" />
+        <Icon icon="tabler:brand-netbeans" className="w-8 h-8 md:w-10 md:h-10" />
         <span>
           The OCR engine is running on your browser, so your images are not sent
           to any server.
@@ -26,7 +26,7 @@ export const Empty = () => (
         href="https://github.com/killoblanco/tesseract-ocr"
         target="_github"
       >
-        <IconBrandGithub className="w-6 h-6" />
+        <Icon icon="tabler:brand-github" className="w-6 h-6" />
         View on GitHub
       </a>
       <a
@@ -34,7 +34,7 @@ export const Empty = () => (
         href="https://github.com/naptha/tesseract.js"
         target="_github"
       >
-        <IconBrandNetbeans className="w-6 h-6" />
+        <Icon icon="tabler:brand-netbeans" className="w-6 h-6" />
         Tesseract.js
       </a>
     </section>

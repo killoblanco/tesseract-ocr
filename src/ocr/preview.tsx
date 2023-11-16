@@ -1,4 +1,4 @@
-import { IconSparkles } from '@tabler/icons-react'
+import { Icon } from '@iconify/react'
 import { FC } from 'react'
 
 interface Props {
@@ -17,7 +17,7 @@ export const Preview: FC<Props> = ({ image, onRecognize }) => (
     </figure>
     <button className="btn btn-primary  self-center" onClick={onRecognize}>
       Process image
-      <IconSparkles className="w-6 h-6" />
+      <Icon icon="tabler:sparkles" className="w-6 h-6" />
     </button>
   </>
 )
