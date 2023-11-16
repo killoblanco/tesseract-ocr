@@ -11,10 +11,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - run: npm i -g firebase-tools
       - run: npm ci && npm run build
+      - run: firebase use --add killoblanco-119f3 --token ${{ secrets.FIREBASE_TOKEN }}
+      - run: firebase target:apply hosting tesseract tesseract
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_KILLOBLANCO_119F3 }}'
           channelId: live
+          target: tesseract
           projectId: killoblanco-119f3
